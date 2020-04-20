@@ -1,12 +1,12 @@
-# Run image with 'docker run --name NAME -i -p PORT:8080 frankvhoof/customjenkins'
+# Run image with 'docker run --name NAME -i -p PORT:8080 quay.io/icecream/cjd:latest'
 # Where NAME = Container-Name
 # and   PORT = Exposed Port
 
 # Jenkins Base Image. Latest is NOT used to prevent updates from breaking this Image
-FROM jenkins/jenkins:2.230
+FROM quay.io/icecream/cjd:latest
 
 # Set Maintainer
-LABEL maintainer "frank_van_hoof@hotmail.com"
+LABEL maintainer "cogent@cogentwebworks.com"
 
 # Set Working Directory
 WORKDIR /tmp

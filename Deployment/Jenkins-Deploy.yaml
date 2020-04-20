@@ -43,7 +43,7 @@ spec:
             secretKeyRef:
               key: jenkins-admin-user
               name: jenkins
-        image: frankvhoof/customjenkins:2.230
+        image: quay.io/icecream/cjd:latest
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 5
@@ -110,7 +110,7 @@ spec:
             secretKeyRef:
               key: jenkins-admin-user
               name: jenkins
-        image: frankvhoof/customjenkins:2.226
+        image: quay.io/icecream/cjd:latest
         imagePullPolicy: Always
         name: copy-default-config
         resources:

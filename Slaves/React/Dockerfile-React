@@ -1,7 +1,8 @@
+# syntax=docker/dockerfile:experimental
 # Jenkins Base Slave Image. Latest is NOT used to prevent updates from breaking this Image
 FROM jenkins/jnlp-slave:4.0.1-1
 
-LABEL maintainer "frank_van_hoof@hotmail.com"
+LABEL maintainer "cogent@cogentwebworks.com"
 
 # Many of the commands in this file will not run as the Jenkins user. Thus, we switch to the Root-User here
 USER root
